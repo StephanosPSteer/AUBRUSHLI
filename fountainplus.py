@@ -49,15 +49,19 @@ class Fountain:
         self.metadata = dict()
         self.elements = list()
         self.curr_scene_no = 0
+        #02/09/22 be nice in the future to import cats from e.g. csv as an option. quite like the idea of adding 
+        # colours or colour codes to csvs too
         self.breakcats = ['CAST:', 'EXTRAS SILENT:', 'EXTRAS ATMOSPHERE:', 'PROPS:', 'WARDROBE:', 'SPECIAL EQUIPMENT:',
         'COSTUMES:','MAKEUP & HAIR:','VEHICLES:','STUNTS:', 'SOUND FX & MUSIC:', 'PRODUCTION NOTES:', 'GREENS:',
         'SPFX:', 'LIVESTOCK:', 'WRANGLER:', 'VFX:', 'SET DRESSING:', 'WEAPONS:','SHOTSTART', 'SHOTEND']
         self.csvrow =[]
         self.shotrow =[]
-        self.csvheader =['thescenenumber',  'thescene','thecategory','resourcereqd','thetext', 'lineindex', 'charstartindex', 'charendindex']
+        #02/09/22 like with cats maybe offer to change headers but really only header names would be possible 
+        # without potentially tonnes of work
+        self.csvheader =['thescenenumber',  'thescene','thecategory','TaggedResourceRqd','TheWholeText', 'startlineindex', 'charstartindex', 'charendindex']
         
-        self.shotheader =['shotno', 'thescenenumber', 'thescene',  'ShotSize','ShotType','AngleOrigin','MoveMent', 'lens', 'Sound', 'Description', 
-        'startlineindex', 'charstartindex', 'charendindex', 'endlineindex', 'thetext']
+        self.shotheader =['shotno', 'thescenenumber', 'thescene',  'ShotSize','ShotType','AngleOrigin','MoveMent', 
+        'lens', 'Sound', 'Description', 'startlineindex', 'charstartindex', 'charendindex', 'endlineindex', 'thetext']
         self.alllines =[]
         self.characters=[]
         self.curr_scene_name = ''
@@ -89,27 +93,24 @@ class Fountain:
     def BoneBreak(self,theline, index=None, curr_scene=0):
             if ('/*' and '*/') in theline :
                 for breaker in self.breakcats:
-                    #print(theline.count('/*'))
+                    
                     mystart = theline.find('/*')
-                    #mystart=0
+                    
                     while theline.count('/*',mystart) !=0 :
                         mystart = theline.find('/*',mystart)
                         myend = theline.find('*/',mystart)
-                        #print(mystart,' ', myend)
-                        #print(theline[mystart:myend+2])
+                       
                         
-                        if (breaker != 'SHOTSTART' and breaker != 'SHOTEND') and breaker in theline:
-                        #print( theline, index, curr_scene, breaker, self.curr_scene_name)
+                        if (breaker != 'SHOTSTART' and breaker != 'SHOTEND') and breaker in theline[mystart:myend+2]:
+                        
 
                             self.csvrow.append([curr_scene,  self.curr_scene_name, breaker, theline[mystart:myend+2],theline, index, mystart, myend])
                     
-                        elif (breaker == 'SHOTSTART') and breaker in theline:
-
+                        elif (breaker == 'SHOTSTART') and breaker in theline[mystart:myend+2]:
+                            print(theline)
                             colonindex = theline.find(':')
                             shotnostartindex = theline.find('SHOTSTART ') +10
-                            #print(colonindex)
-                            #print(shotnostartindex)
-                            #print(theline)
+                            
                             shotno = theline[shotnostartindex:colonindex]
                             shotinfostr = theline[colonindex+1:myend]
                             shotinfolist = shotinfostr.split(",")
@@ -120,26 +121,21 @@ class Fountain:
 
                             self.shotrow.append([shotno, scenedef,  self.curr_scene_name, shotinfolist[1], shotinfolist[2],
                             shotinfolist[3], shotinfolist[4], shotinfolist[5], shotinfolist[6], shotinfolist[7], index, mystart, myend])
-                        #print( theline, index, curr_scene, breaker, self.curr_scene_name)
+                        
 
-                        elif (breaker == 'SHOTEND') and breaker in theline:
+                        elif (breaker == 'SHOTEND') and breaker in theline[mystart:myend+2]:
                             colonindex = theline.find(':')
                             shotnostartindex = theline.find('SHOTEND ')+8
-                            #print(colonindex)
-                            #print(shotnostartindex)
-                            #print(theline)
+                            
                             shotno = theline[shotnostartindex:colonindex]
-                            #print(shotno)
-                            #print(self.shotrow)
+                            
                             for l in self.shotrow:
                                 if l != []:
-                                    #print(l[0])
-                                    #print(shotno)
+                                    
                                     if l[0] == shotno:
                                         l.insert(14,index)
                                         l.insert(15,self.alllines[l[10]:index+1])
-                                        #populate lineindex numbers from shotrow and current index +1 
-                                        # parse cast so that you have names
+                                        
                         mystart = myend +2
 
     def _parse_head(self, script_head):
@@ -495,3 +491,4 @@ class Fountain:
                     )
                 )
                 newlines_before = 0
+
