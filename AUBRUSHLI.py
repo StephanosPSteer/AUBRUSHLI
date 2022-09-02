@@ -40,6 +40,8 @@ F = fountainplus.Fountain(this_text)
 
 res = list(Counter(F.characters).items())
 
+
+
 header = ['CAST', 'Dialogue Frequency']
 
 with open('cast.csv', 'w', encoding='UTF8', newline='') as f:
@@ -56,6 +58,8 @@ if breakdown ==1:
 
 	header = F.csvheader
 	data = F.csvrow
+
+	data.sort(key=lambda x: (x[5], x[6], x[7]))
 
 	with open('breakdownsummary.csv', 'w', encoding='UTF8', newline='') as f:
 		writer = csv.writer(f)
