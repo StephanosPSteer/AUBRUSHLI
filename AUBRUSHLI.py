@@ -12,24 +12,26 @@ breakdown = 0
 shotlist = 0
 fountainfile = ''
 
-@Gooey(header_show_title=True, header_show_subtitle=True, menus=True, program_name='Aubrushli', menu=[{'name': 'About', 'items':
+@Gooey(header_show_title=True, header_show_subtitle=True, menus=True, program_name='Aubrushli', menu=[{'name': 'Help', 'items':
 	 [{
 		 'type': 'AboutDialog',
-		 'menuTitle': 'About'
+		 'menuTitle': 'About Aubrushli'
 		 ,
-		 'name': 'test',
-		 'description': 'blah',
+		 'name': 'Aubrushli',
+		 'description': 'A simple app to read and extract production information from screenplays',
 		 'version': '1.0',
 		 'copyright': '2022',
-		 'website': 'meh',
-		 'developer': 'meh',
+		 'website': 'https://github.com/StephanosPSteer/AUBRUSHLI',
+		 'developer': 'Stefanos Christofi',
 		 'license': 'MIT'
 		 }]
 		 }]
 )
 def main():
 	# parser = ArgumentParser()
+	#mac version
 	parser = GooeyParser(description="By Stefanos Christofi  \nE:stefanoschristofi@yahoo.com")
+	#windows version
 	#parser = GooeyParser()
 	parser.add_argument(
         "-i",
