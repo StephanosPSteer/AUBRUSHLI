@@ -58,10 +58,11 @@ class Fountain:
         self.shotrow =[]
         #02/09/22 like with cats maybe offer to change headers but really only header names would be possible 
         # without potentially tonnes of work
-        self.csvheader =['thescenenumber',  'thescene','thecategory','TaggedResourceRqd','TheWholeText', 'startlineindex', 'charstartindex', 'charendindex']
+        self.csvheader =['Scene Number',  'Scene Name','TAG','Tagged Resource Required','Surrounding Text', 
+        'Start Line Index', 'Start Char Index', 'End Char Index']
         
-        self.shotheader =['shotno', 'thescenenumber', 'thescene',  'ShotSize','ShotType','AngleOrigin','MoveMent', 
-        'lens', 'Sound', 'Description', 'startlineindex', 'charstartindex', 'charendindex', 'endlineindex', 'thetext']
+        self.shotheader =['Shot Number', 'Scene Number', 'Scene Name',  'Shot Size','Shot Type','AngleOrigin','MoveMent', 
+        'lens', 'Sound', 'Description', 'Start Line Index', 'Start Char Index', 'End Char Index', 'End Line Index', 'Surrounding Text']
         self.alllines =[]
         self.characters=[]
         self.curr_scene_name = ''
@@ -99,7 +100,7 @@ class Fountain:
                     while theline.count('/*',mystart) !=0 :
                         mystart = theline.find('/*',mystart)
                         myend = theline.find('*/',mystart)
-                       
+                        #print("all of them " + theline)
                         
                         if (breaker != 'SHOTSTART' and breaker != 'SHOTEND') and breaker in theline[mystart:myend+2]:
                         
@@ -107,7 +108,7 @@ class Fountain:
                             self.csvrow.append([curr_scene,  self.curr_scene_name, breaker, theline[mystart:myend+2],theline, index, mystart, myend])
                     
                         elif (breaker == 'SHOTSTART') and breaker in theline[mystart:myend+2]:
-                            print(theline)
+                            #print("SHOTSTART " + theline)
                             colonindex = theline.find(':')
                             shotnostartindex = theline.find('SHOTSTART ') +10
                             
@@ -124,6 +125,7 @@ class Fountain:
                         
 
                         elif (breaker == 'SHOTEND') and breaker in theline[mystart:myend+2]:
+                            #print("SHOTEND " + theline)
                             colonindex = theline.find(':')
                             shotnostartindex = theline.find('SHOTEND ')+8
                             
@@ -491,4 +493,3 @@ class Fountain:
                     )
                 )
                 newlines_before = 0
-
