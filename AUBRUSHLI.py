@@ -35,29 +35,33 @@ def main():
 	#parser = GooeyParser()
 	parser.add_argument(
         "-i",
-        "--inputfile", 
+        "--inputfile",
+	metavar='Fountain Screenplay', 
         required=True,
         help="Fountain File",
-		widget='FileChooser'
+	widget='FileChooser'
     )
 	parser.add_argument(
          "-castlist",
-        #  "--cast",
+	 metavar='Cast List',
+          #"--Cast List",
 		 action='store_true',
         # required=False,
         help="create a cast list"
     )
 	parser.add_argument(
         "-breakdownsummary",
+	metavar='Breakdown Summary',
 		action='store_true',
-        # "--breakdown_summary",
+         #"--Breakdown Summary",
         # required=False,
         help="create a breakdown summary"
     )
 	parser.add_argument(
         "-shotlist",
+	metavar='Shot List',
 		action='store_true',
-        # "--shotlist",
+        # "--Shot List",
         # required=False,
         help="create a shotlist"
     )
