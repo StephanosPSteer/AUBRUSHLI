@@ -8,6 +8,10 @@ The name AUBRUSHLI is just an acronynm taking the first two letters of Automated
 
 The application is a desktop app currently for MAC and Windows. 
 
+A QUICK DISCLAIMER
+
+I made AUBRUSHLI for me initially after seeing some of the tools of the production process that were catered to only by professional fairly expensive software and then seeing the open source fountain script markup language and thinking ok maybe I can do something with this. So AUBRUSHLI at least right now is not at all robust and wants tags in a certain well defined format. I mean it shouldn't damage the script but take a copy. It obviously does not have a fraction of the functionality of the paid for solutions, nor is it remotely pretty, but it works and I may improve it over time and of ourse as its on github others are free to. 
+
 INSTALLATION
 
 Installation is just a case of downloading the zip file from the release for your particular os and unzipping and running https://github.com/StephanosPSteer/AUBRUSHLI/releases/tag/AUBRUSHLI
