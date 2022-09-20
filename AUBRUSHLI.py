@@ -62,13 +62,9 @@ def main():
 
 	this_text = work_with_me
 
-
-
 	# make it a fountain object
 	F = fountainplus.Fountain(this_text)
-
-			
-
+	
 	if args.castlist:
 		res = list(Counter(F.characters).items())
 
