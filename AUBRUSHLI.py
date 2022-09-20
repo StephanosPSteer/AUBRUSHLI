@@ -1,16 +1,9 @@
 import fountainplus
-import sys
-
 import csv
 from collections import Counter
-from argparse import ArgumentParser
 from gooey import Gooey
 from gooey import GooeyParser
 
-cast=0
-breakdown = 0
-shotlist = 0
-fountainfile = ''
 
 @Gooey(header_show_title=True, header_show_subtitle=True, menus=True, program_name='Aubrushli', menu=[{'name': 'Help', 'items':
 	 [{
