@@ -28,7 +28,7 @@ fountainfile = ''
 		 }]
 )
 def main():
-	# parser = ArgumentParser()
+	
 	#mac version
 	parser = GooeyParser(description="By Stefanos Christofi  \nE:stefanoschristofi@yahoo.com")
 	#windows version
@@ -44,53 +44,28 @@ def main():
 	parser.add_argument(
          "-castlist",
 	 metavar='Cast List',
-          #"--Cast List",
-		 action='store_true',
-        # required=False,
-        help="create a cast list"
+         action='store_true',
+         help="create a cast list"
     )
 	parser.add_argument(
         "-breakdownsummary",
 	metavar='Breakdown Summary',
-		action='store_true',
-         #"--Breakdown Summary",
-        # required=False,
+	action='store_true',
         help="create a breakdown summary"
     )
 	parser.add_argument(
         "-shotlist",
 	metavar='Shot List',
-		action='store_true',
-        # "--Shot List",
-        # required=False,
+	action='store_true',
         help="create a shotlist"
     )
 	args = parser.parse_args()
 	
-
-
-# get parameter settings
-
-	# for idx, arg in enumerate(sys.argv):
-	# 	#print(arg)
-	# 	if idx == 1:
-	# 		fountainfile = arg
-	# 	if idx >1:
-	# 		if arg =='--cast':
-	# 			cast = 1
-	# 		if arg =='--breakdown':
-	# 			breakdown = 1
-	# 		if arg =='--shotlist':
-	# 			shotlist = 1
-
-
-
 	# load fountain file
 
 	d = open(args.inputfile, 'r')
 	work_with_me = d.read()
 	d.close()
-
 
 	this_text = work_with_me
 
@@ -98,11 +73,7 @@ def main():
 
 	# make it a fountain object
 	F = fountainplus.Fountain(this_text)
-	#for et in F.elements(FountainElement('Boneyard')): 
-	#print(F.elements[0])
-	# for ele in F.elements:
-		#if 'Boneyard:' in ele:
-		# print(ele)
+
 			
 
 	if args.castlist:
@@ -131,7 +102,6 @@ def main():
 			writer = csv.writer(f)
 			writer.writerow(header)
 			writer.writerows(data)
-			#writer.close()
 			f.close
 
 		print('breakdownsummary.csv created')
