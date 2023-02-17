@@ -69,17 +69,25 @@ def main():
             'title': "Cast List"
         })
 	cast.add_argument('--cast_out', metavar='Save Cast List',
-					  help='Select where to save Cast List', widget='FileSaver')
+					  help='Select where to save Cast List',
+					  widget='FileSaver',
+					  gooey_options=dict(
+						  wildcard="CSV (.csv)|*.csv", full_width=True
+					  ))
 	breakd = g.add_mutually_exclusive_group(gooey_options={
 		'title': "Breakdown Summary"
 	})
 	breakd.add_argument('--break_out', metavar='Save Breakdown Summary',
-					  help='Select where to save Breakdown Summary', widget='FileSaver')
+					  help='Select where to save Breakdown Summary', widget='FileSaver',
+					  gooey_options=dict(
+						  wildcard="CSV (.csv)|*.csv", full_width=True))
 	shot = g.add_mutually_exclusive_group(gooey_options={
 		'title': "Shot List"
 	})
 	shot.add_argument('--shot_out', metavar='Save Shot List',
-					  help='Select where to save Shot List', widget='FileSaver')
+					  help='Select where to save Shot List', widget='FileSaver',
+					  gooey_options=dict(
+						  wildcard="CSV (.csv)|*.csv", full_width=True,))
 
 	args = parser.parse_args()
 	
@@ -148,6 +156,11 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+		
+
 
 
 
