@@ -2,7 +2,7 @@
 
 WHAT IS IT?
 
-AUBRUSHLI is an extension of fountain.py from... Which now allows specially formatted fountain screenplays/scripts to automatically create CSVs for Cast lists, Breakdown Summaries and Shot lists thereby reducing duplication of work and potentially speeding up the production process. 
+AUBRUSHLI is an extension of fountain.py https://gist.github.com/ColtonProvias/8232624 Which now allows specially formatted fountain screenplays/scripts to automatically create CSVs for Cast lists, Breakdown Summaries and Shot lists thereby reducing duplication of work and potentially speeding up the production process. 
 
 The name AUBRUSHLI is just an acronynm taking the first two letters of Automated Breakdown Shot List and adding a U in the middle. 
 
@@ -10,7 +10,7 @@ The application is a desktop app currently for MAC and Windows.
 
 A QUICK DISCLAIMER
 
-I made AUBRUSHLI for me initially after seeing some of the tools of the production process that were catered to only by professional fairly expensive software and then seeing the open source fountain script markup language and thinking ok maybe I can do something with this. So AUBRUSHLI at least right now is not at all robust and wants tags in a certain well defined format. I mean it shouldn't damage the script but take a copy. It obviously does not have a fraction of the functionality of the paid for solutions, nor is it remotely pretty, but it works and I may improve it over time and of ourse as its on github others are free to. 
+I made AUBRUSHLI for me initially after seeing some of the tools of the production process that were catered to only by professional fairly expensive software and then seeing the open source fountain script markup language and thinking ok maybe I can do something with this. So AUBRUSHLI at least right now is not at all robust and wants tags in a certain well defined format. I mean it shouldn't damage the script but take a copy. It obviously does not have a fraction of the functionality of the paid for solutions, nor is it remotely pretty, but it works and I may improve it over time and of course as its on github others are free to. 
 
 INSTALLATION
 
@@ -45,7 +45,7 @@ WEAPONS:
 
 The tags I believe are fairly standard within Film and TV production. 
 
-If AUBRUSHLI finds a tag it will then look for the rest of the text within the boneyard element and will add the tag and all the text in the boneyard and its surrounding text into a row in a CSV file. In fact it adds the following columns into a row in a CSV file:-
+If AUBRUSHLI finds a tag it will then look for the rest of the text within the boneyard element and will add the tag and all the text in the boneyard and its surrounding text into a row in a CSV file. It also adds the following columns into a row in a CSV file:-
 
 'Scene Number',  'Scene Name','TAG','Tagged Resource Required','Surrounding Text', 'Start Line Index', 'Start Char Index', 'End Char Index'
 
