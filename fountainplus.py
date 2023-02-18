@@ -2,9 +2,6 @@
 fountainplus.py
 extended version of fountain.py by Stephanos Steer - stephanos_steer@yahoo.co.uk
 Original Python code at https://gist.github.com/ColtonProvias/8232624
-fountain.py
-Ported to Python 3 by Colton J. Provias - cj@coltonprovias.com
-Original Python code at https://gist.github.com/ColtonProvias/8232624
 Based on Fountain by Nima Yousefi & John August
 Original code for Objective-C at https://github.com/nyousefi/Fountain
 Further Edited by Manuel Senfft
