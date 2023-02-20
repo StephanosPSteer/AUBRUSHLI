@@ -14,7 +14,7 @@ I made AUBRUSHLI for me initially after seeing some of the tools of the producti
 
 INSTALLATION
 
-Installation is just a case of downloading the zip file from the release for your particular os and unzipping and running https://github.com/StephanosPSteer/AUBRUSHLI/releases/tag/AUBRUSHLI
+Installation is just a case of downloading the zip file from the release for your particular os and unzipping and running https://github.com/StephanosPSteer/AUBRUSHLI/releases
 
 HOW IT WORKS
 
