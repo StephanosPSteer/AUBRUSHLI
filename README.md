@@ -22,8 +22,9 @@ HOW IT WORKS
 
 The AUBRUSHLI app makes use of [boneyard](https://fountain.io/syntax#section-bone) within fountain applications. When AUBRUSHLI sees a [boneyard tag](https://fountain.io/syntax#section-bone) i.e. /* some text */ instead of just ignoring it like fountain normally would AUBRUSHLI looks for specific tags within the boneyard in order to create Breakdown Summaries or Shot Lists.  
 
-Breakdown Summaries
-within boneyard tags AUBRUSHLI when told to create a breakdown summary will look for one of the following tags:-
+BREAKDOWN SUMMARIES
+
+Within fountain boneyard tags AUBRUSHLI when told to create a breakdown summary will look for one of the following tags:-
 
 * CAST:
 * EXTRAS SILENT: 
@@ -47,7 +48,7 @@ within boneyard tags AUBRUSHLI when told to create a breakdown summary will look
 
 The tags I believe are fairly standard within Film and TV production. 
 
-If AUBRUSHLI finds a tag it will then look for the rest of the text within the boneyard element and will add the tag and all the text in the boneyard and its surrounding text into a row in a CSV file. It also adds the following columns into a row in a CSV file:-
+If AUBRUSHLI finds a tag it will then look for the rest of the text within the boneyard element and will add the tag and all the text in the boneyard and its surrounding text into a row in your CSV file, initially it also adds the following column headers into the top row in your CSV file:-
 
 'Scene Number',  'Scene Name','TAG','Tagged Resource Required','Surrounding Text', 'Start Line Index', 'Start Char Index', 'End Char Index'
 
@@ -59,15 +60,23 @@ SHOT LISTS
 
 [![Watch the video](https://img.youtube.com/vi/Suh_3SY9-ZY/maxresdefault.jpg)](https://www.youtube.com/watch?v=Suh_3SY9-ZY)
 
-TAGS:-
+Within fountain boneyard tags AUBRUSHLI when told to create a Shot List will look for an Opening TAG:-
 
-* SHOTSTART #: 
+* SHOTSTART #:
+
+and a corresponding Closing Tag:-
+
 * SHOTEND #:
+
+If AUBRUSHLI finds an opening tag it will then look for the rest of the text until it finds a closing tag and will add the tag and all its surrounding text into a row in your CSV file, initially it also adds the following column headers into the top row in your CSV file:-
     
-CSV ROW:-    
-        
 'Shot Number', 'Scene Number', 'Scene Name',  'Shot Size','Shot Type','AngleOrigin','MoveMent', 'lens', 'Sound', 'Description', 'Start Line Index', 'Start Char Index', 'End Char Index', 'End Line Index', 'Surrounding Text'
 
+CAST LISTS
+
+Aubrushli also creates cast lists from any fountain document along with the frequency of dialogue of each character.
+
+and thats the functionality of Aubrushli
 
 
 Many thanks to:-
