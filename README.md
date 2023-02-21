@@ -57,16 +57,18 @@ To be continued...
 
 SHOT LISTS
 
+https://www.youtube.com/watch?v=Suh_3SY9-ZY
+
 TAGS:-
 
-SHOTSTART
-SHOTEND
+SHOTSTART #: 
+SHOTEND #:
     
 CSV ROW:-    
         
 'Shot Number', 'Scene Number', 'Scene Name',  'Shot Size','Shot Type','AngleOrigin','MoveMent', 'lens', 'Sound', 'Description', 'Start Line Index', 'Start Char Index', 'End Char Index', 'End Line Index', 'Surrounding Text'
 
-https://www.youtube.com/watch?v=Suh_3SY9-ZY
+
 
 Many thanks to:-
 
