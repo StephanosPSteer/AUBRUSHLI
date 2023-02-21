@@ -20,7 +20,7 @@ Installation is just a case of downloading the zip file from the release for you
 
 HOW IT WORKS
 
-The AUBRUSHLI app makes use of boneyard within fountain applications. When AUBRUSHLI sees a boneyard tag i.e. /* some text */ instead of just ignoring it like fountain normally would AUBRUSHLI looks for specific tags within the boneyard in order to create Breakdown Summaries or Shot Lists.  
+The AUBRUSHLI app makes use of [boneyard](https://fountain.io/syntax#section-bone) within fountain applications. When AUBRUSHLI sees a [boneyard tag](https://fountain.io/syntax#section-bone) i.e. /* some text */ instead of just ignoring it like fountain normally would AUBRUSHLI looks for specific tags within the boneyard in order to create Breakdown Summaries or Shot Lists.  
 
 Breakdown Summaries
 within boneyard tags AUBRUSHLI when told to create a breakdown summary will look for one of the following tags:-
