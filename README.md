@@ -24,6 +24,10 @@ The AUBRUSHLI app makes use of [boneyard](https://fountain.io/syntax#section-bon
 
 BREAKDOWN SUMMARIES
 
+[![Watch the video](https://img.youtube.com/vi/jxFoaLxFhfI/maxresdefault.jpg)](https://www.youtube.com/watch?v=jxFoaLxFhfI)
+
+
+
 Within fountain boneyard tags AUBRUSHLI when told to create a breakdown summary will look for one of the following tags:-
 
 * CAST:
