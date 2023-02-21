@@ -2,7 +2,7 @@
 
 WHAT IS IT?
 
-https://www.youtube.com/watch?v=iqfSt_0BC3E
+[![Watch the video](https://img.youtube.com/vi/iqfSt_0BC3E/maxresdefault.jpg)](https://www.youtube.com/watch?v=iqfSt_0BC3E)
 
 AUBRUSHLI allows specially formatted fountain screenplays/scripts to automatically create CSVs for Cast lists, Breakdown Summaries and Shot lists thereby reducing duplication of work and potentially speeding up the production process. 
 
