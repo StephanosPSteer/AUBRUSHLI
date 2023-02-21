@@ -57,7 +57,7 @@ To be continued...
 
 SHOT LISTS
 
-https://www.youtube.com/watch?v=Suh_3SY9-ZY
+[![Watch the video](https://img.youtube.com/vi/Suh_3SY9-ZY/maxresdefault.jpg)](https://www.youtube.com/watch?v=Suh_3SY9-ZY)
 
 TAGS:-
 
