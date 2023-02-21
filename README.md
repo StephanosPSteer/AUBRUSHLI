@@ -25,25 +25,25 @@ The AUBRUSHLI app makes use of boneyard within fountain applications. When AUBRU
 Breakdown Summaries
 within boneyard tags AUBRUSHLI when told to create a breakdown summary will look for one of the following tags:-
 
-CAST:
-EXTRAS SILENT: 
-EXTRAS ATMOSPHERE: 
-PROPS: 
-WARDROBE:
-SPECIAL EQUIPMENT:
-COSTUMES:
-MAKEUP & HAIR:
-VEHICLES:
-STUNTS: 
-SOUND FX & MUSIC:
-PRODUCTION NOTES:
-GREENS:
-SPFX:
-LIVESTOCK:
-WRANGLER:
-VFX: 
-SET DRESSING:
-WEAPONS:
+* CAST:
+* EXTRAS SILENT: 
+* EXTRAS ATMOSPHERE: 
+* PROPS: 
+* WARDROBE:
+* SPECIAL EQUIPMENT:
+* COSTUMES:
+* MAKEUP & HAIR:
+* VEHICLES:
+* STUNTS: 
+* SOUND FX & MUSIC:
+* PRODUCTION NOTES:
+* GREENS:
+* SPFX:
+* LIVESTOCK:
+* WRANGLER:
+* VFX: 
+* SET DRESSING:
+* WEAPONS:
 
 The tags I believe are fairly standard within Film and TV production. 
 
@@ -61,8 +61,8 @@ SHOT LISTS
 
 TAGS:-
 
-SHOTSTART #: 
-SHOTEND #:
+* SHOTSTART #: 
+* SHOTEND #:
     
 CSV ROW:-    
         
