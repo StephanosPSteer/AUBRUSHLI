@@ -104,6 +104,8 @@ Let me knowe if you have any comments or issues with Aubrushli
 
 Many thanks to:-
 
+https://fountain.io/
+
 https://gist.github.com/ColtonProvias/8232624
 
 https://github.com/chriskiehl/Gooey
