@@ -63,7 +63,7 @@ If AUBRUSHLI finds a tag it will then look for the rest of the text within the b
 * **Start Char Index** - Starting character
 * **End Char Index** - Ending character
 
-SHOT LISTS
+## SHOT LISTS
 
 [![Watch the video](https://img.youtube.com/vi/Suh_3SY9-ZY/maxresdefault.jpg)](https://www.youtube.com/watch?v=Suh_3SY9-ZY)
 
@@ -77,18 +77,34 @@ and a corresponding Closing Tag:-
 
 If AUBRUSHLI finds an opening tag it will then look for the rest of the text until it finds a closing tag and will add the tag and all its surrounding text into a row in your CSV file, initially it also adds the following column headers into the top row in your CSV file:-
     
-'Shot Number', 'Scene Number', 'Scene Name',  'Shot Size','Shot Type','AngleOrigin','MoveMent', 'lens', 'Sound', 'Description', 'Start Line Index', 'Start Char Index', 'End Char Index', 'End Line Index', 'Surrounding Text'
+* **Shot Number** - The shot number
+* **Scene Number** - The scene number
+* **Scene Name** - The scene name
+* **Shot Size** - e.g. wide, medium, close up
+* **Shot Type** - e.g. single, double 
+* **AngleOrigin** - the shot angle
+* **MoveMent** - is it a static or moving shot
+* **lens** - what lens or lens range
+* **Sound** - does this sync with sound
+* **Description** - description of the shot
+* **Start Line Index** - the starting line index of SHOTSTART
+* **Start Char Index** - the starting character index in SHOTSTART
+* **End Char Index** - the ending character index of SHOTSTART
+* **End Line Index** - the line index of SHOTEND
+* **Surrounding Text** - all the text between the beginning of the SHOTSTART boneyard and end of SHOTEND boneyard
 
-CAST LISTS
+## CAST LISTS
 
 Aubrushli also creates cast lists from any fountain document along with the frequency of dialogue of each character.
 
-and thats the functionality of Aubrushli
+and thats the functionality of Aubrushli hope it helps you
+
+Let me knowe if you have any comments or issues with Aubrushli
 
 
 Many thanks to:-
 
-fountain.py https://gist.github.com/ColtonProvias/8232624
+https://gist.github.com/ColtonProvias/8232624
 
 https://github.com/chriskiehl/Gooey
 
