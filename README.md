@@ -97,12 +97,14 @@ If AUBRUSHLI finds an opening tag it will then look for the rest of the text unt
 
 Aubrushli also creates cast lists from any fountain document along with the frequency of dialogue of each character.
 
+## Thats all folks!!
+
 and thats the functionality of Aubrushli hope it helps you
 
 Let me knowe if you have any comments or issues with Aubrushli
 
 
-Many thanks to:-
+## Thanks
 
 https://fountain.io/
 
