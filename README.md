@@ -1,6 +1,6 @@
 # AUBRUSHLI
 
-##WHAT IS IT?
+## WHAT IS IT?
 
 [![Watch the video](https://img.youtube.com/vi/iqfSt_0BC3E/maxresdefault.jpg)](https://www.youtube.com/watch?v=iqfSt_0BC3E)
 
@@ -10,19 +10,19 @@ The name AUBRUSHLI is just an acronynm taking the first two letters of Automated
 
 The application is a desktop app currently for MAC and Windows. 
 
-##A QUICK DISCLAIMER
+## A QUICK DISCLAIMER
 
 I made AUBRUSHLI for me initially after seeing some of the tools of the production process that were catered to only by professional fairly expensive software and then seeing the open source fountain script markup language and thinking ok maybe I can do something with this. So AUBRUSHLI at least right now is not at all robust and wants tags in a certain well defined format. I mean it shouldn't damage your script/screenplay but take a copy just in case. It obviously does not have a fraction of the functionality of the paid for solutions, nor is it remotely pretty, but it works and I may improve it over time and of course as its on github, others are free to if they wish. 
 
-##INSTALLATION
+## INSTALLATION
 
 Installation is just a case of downloading the zip file from the release for your particular os and unzipping and running https://github.com/StephanosPSteer/AUBRUSHLI/releases
 
-##HOW IT WORKS
+## HOW IT WORKS
 
 The AUBRUSHLI app makes use of [boneyard](https://fountain.io/syntax#section-bone) within fountain applications. When AUBRUSHLI sees a [boneyard tag](https://fountain.io/syntax#section-bone) i.e. /* some text */ instead of just ignoring it like fountain normally would AUBRUSHLI looks for specific tags within the boneyard in order to create Breakdown Summaries or Shot Lists.  
 
-##BREAKDOWN SUMMARIES
+## BREAKDOWN SUMMARIES
 
 [![Watch the video](https://img.youtube.com/vi/jxFoaLxFhfI/maxresdefault.jpg)](https://www.youtube.com/watch?v=jxFoaLxFhfI)
 
