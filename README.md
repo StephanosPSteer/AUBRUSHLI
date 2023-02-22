@@ -101,7 +101,7 @@ Aubrushli also creates cast lists from any fountain document along with the freq
 
 and thats the functionality of Aubrushli hope it helps you
 
-Let me knowe if you have any comments or issues with Aubrushli
+Let me know if you have any comments or issues with Aubrushli
 
 
 ## Thanks
