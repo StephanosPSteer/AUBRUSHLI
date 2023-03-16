@@ -194,7 +194,7 @@ class ImageViewer(QtWidgets.QWidget):
             # If user clicked "Yes", send the selected image path
             if response == QtWidgets.QMessageBox.Yes:
                 print(f"Selected image path: {self.selected_image_path}")
-                subprocess.run(['python', 'story2.py' , str(self.selected_image_path)] )
+                subprocess.run(['python', 'createstoryboard.py' , str(self.selected_image_path)] )
                 self.close()
         else:
             # If no image is selected, show an error message
