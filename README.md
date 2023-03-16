@@ -101,7 +101,7 @@ If AUBRUSHLI finds an opening tag it will then look for the rest of the text unt
 Aubrushli also creates cast lists from any fountain document along with the frequency of dialogue of each character.
 
 
-##AUBRUSHLI STORYBOARD
+## AUBRUSHLI STORYBOARD
 
 To be explained soon...
 
