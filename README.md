@@ -1,5 +1,8 @@
 # AUBRUSHLI
 
+##**********AUBRUSHLI STORYBOARD has dropped and
+##**********COMING VERY SOON AUBRUSHLI IMAGE GENERATOR FEATURING STABLE DIFFUSION
+
 ## WHAT IS IT?
 
 [![Watch the video](https://img.youtube.com/vi/iqfSt_0BC3E/maxresdefault.jpg)](https://www.youtube.com/watch?v=iqfSt_0BC3E)
@@ -96,6 +99,11 @@ If AUBRUSHLI finds an opening tag it will then look for the rest of the text unt
 ## CAST LISTS
 
 Aubrushli also creates cast lists from any fountain document along with the frequency of dialogue of each character.
+
+
+##AUBRUSHLI STORYBOARD
+
+To be explained soon...
 
 ## Thats all folks!!
 
